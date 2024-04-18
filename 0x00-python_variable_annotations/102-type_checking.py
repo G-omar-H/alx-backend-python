@@ -5,6 +5,16 @@ from typing import Tuple, List
 
 
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
+    """
+    mypy to validate the following piece of code and apply any necessary changes.
+
+    Args:
+        lst (Tuple): _description_
+        factor (int, optional): _description_. Defaults to 2.
+
+    Returns:
+        List: _description_
+    """
     zoomed_in: List = [item for item in lst for i in range(factor)]
     return zoomed_in
 
