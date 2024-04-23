@@ -5,12 +5,12 @@
 
 import random
 import asyncio
-from typing import Iterable
+from typing import Iterator
 
 async_generator = __import__("0-async_generator").async_generator
 
 
-async def async_comprehension() -> Iterable[float, None, None]:
+async def async_comprehension() -> Iterator[float, None, None]:
     """
     Coroutine that collect 10 random numbers using an async
     comprehensing over async_generator
